@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Bebas Regular;
+  src:"fonts/BEBAS.tff";
+}
+
+body {
+  font-family: Bebas Regular;
+  font-size: 100px;
+  margin: 0px;
+  background-color: #1d152a;
+
+}
+
+.bgimg {
+position: absolute;
+width: 100%;
+z-index: -1;
+}
+
+nav {
+
+text-align: center;
+
+}
+
+a {
+  color: #e3c9b4;
+}
