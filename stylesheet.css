@@ -1,28 +1,35 @@
-@font-face {
-  font-family: Bebas Regular;
-  src:"fonts/BEBAS.tff";
+* {
+  box-sizing: border-box;
 }
 
-body {
-  font-family: Bebas Regular;
-  font-size: 100px;
-  margin: 0px;
-  background-color: #1d152a;
-
-}
-
-.bgimg {
-position: absolute;
-width: 100%;
-z-index: -1;
+nav a{
+  position: fixed;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  display: inline-block;
+  margin-bottom: 10%;
+  text-decoration: none;
+  color: rgb(26, 22, 28);
+  text-transform: uppercase;
 }
 
 nav {
-
-text-align: center;
-
+  margin-top: 13%;
+  margin-bottom: 15%;
 }
 
-a {
-  color: #e3c9b4;
+body {
+  margin: 0;
+  text-align: center;
 }
+
+/* header */
+
+header {
+  position: absolute;
+  margin-top: 1em;
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
