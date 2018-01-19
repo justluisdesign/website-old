@@ -3,10 +3,12 @@
   box-sizing: border-box;
 }
 */
-@font-face{font-family: bebas; src: url(C:\Users\luis_\Desktop\Website\LuisFNF.github.io\fonts\BEBAS.ttf);}
+@font-face{
+  font-family: HKNovaR; src: url(/fonts/HKNova-MediumR.ttf);
+  }
 
 .home {
-  background: #e7e7e7;
+  background: #dddbdb;
   margin: 0%;
   }
 
@@ -23,11 +25,12 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
-  font-family: "bebas";
-  font-size: 25px;
+  font-family: "HKNovaR";
+  font-size: 18px;
+  font-weight: bold;
   }
 
-nav {
+nav .logo {
   position: static;
   display: inline-block;
   margin-top: 13%;
@@ -58,6 +61,6 @@ li {
 /* media query */
 @media screen and (max-width:400px){
   nav img{
-    disply:none
+    display:none;
     }
 }
