@@ -1,42 +1,59 @@
+/*
 * {
   box-sizing: border-box;
 }
+*/
+@font-face{font-family: bebas; src: url(C:\Users\luis_\Desktop\Website\LuisFNF.github.io\fonts\BEBAS.ttf);}
 
-nav a{
-  position: static;
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  display: inline-block;
-  text-decoration: none;
-  color: rgb(26, 22, 28);
-  text-transform: uppercase;
+.home {
+  background: #e7e7e7;
+  margin: 0%;
+  }
+
+.work {
+  margin: auto;
+  background: #b1dae9;
 }
+
+nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+  font-family: "bebas";
+  font-size: 25px;
+  }
 
 nav {
+  position: static;
+  display: inline-block;
   margin-top: 13%;
   margin-bottom: 17%;
-}
+  }
+
+nav img{
+  vertical-align: middle;
+  }
 
 body {
   margin: 0;
   text-align: center;
-}
-
-/* header */
+  }
 
 header {
   position: absolute;
   margin-top: 1em;
-}
-
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
+  }
 
 li {
- display: inline-block;
- margin-left: 15%;
- margin-right: 15%;
- margin-top: 2%;
- margin-bottom: 2%;
+  display: inline-block;
+  margin-top: 2%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  }
+/* media query */
+@media screen and (max-width:400px){
+  nav img{
+    disply:none
+    }
 }
