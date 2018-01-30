@@ -4,7 +4,7 @@
 }
 */
 @font-face{
-  font-family: HKNovaR; src: url(/fonts/HKNova-MediumR.ttf);
+  font-family: HKNovaR; src: url(fonts/HKNova-MediumR.ttf);
 }
 
 .fixedbar .fixedlogo {
