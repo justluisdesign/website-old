@@ -2,96 +2,167 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="stylesheet.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- SCRIPT REMEMBER TO DELETE -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-<title> LFNF </title>
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-<!-- HOME PAGE -->
+      // Store hash
+      var hash = this.hash;
 
-<section class="home">
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- FIXED BAR -->
+
+<div class="fixedbar">
+
+    <a href="#workpage">Work</a>
+      <div class="fixedlogo">
+        <a href="#homepage"><img src="images/LFNF.png" height="70" alt="Logo"></a>
+      </div>
+    <a href="#aboutme">About me</a>
+
+</div>
+
+
+<title>LFNF</title>
+
+<!-- HOME PAGE / NAV -->
+
+<a id="homepage">
+  <section class="home" background="images/greybg.jpg">
   <nav>
-    <a href="#work">Cool sh*t</a>
+    <a href="#workpage">Work</a>
     <div class="logo">
-      <a href="#home"><img src="images/LFNF.png" height="400" alt="Logo"><a>
+      <a href="#homepage"><img src="images/LFNF.png" height="440" alt="Logo"></a>
     </div>
-  <a href="#about">About me</a>
+  <a href="#aboutme">About me</a>
   </nav>
 </section>
+</a>
 
 <!-- WORK -->
 
+<a id="workpage">
 <section class="work">
-  <h1>Cool Sh*t</h1>
+  <h1 class="work-title">Work</h1>
+<div class="wrapper">
+
 
   <!-- 01 -->
-  <figure>
-    <img src="images/01.jpg" alt="portfolio-a">
-    <figcaption class="portfolio description">
+  <figure class="workone">
+    <img src="images/01.jpg" alt="img01">
+    <!-- <figcaption class="portfolio description">
       <p>project title</p>
-    </figcaption>
+    </figcaption> -->
   </figure>
 
   <!-- 02 -->
-  <figure class="02">
+  <figure class="worktwo">
     <img src="images/02.jpg" alt="img02">
-    <figcaption class="portfolio description">
+    <!-- <figcaption class="portfolio description">
       <p>project title</p>
-    </figcaption>
+    </figcaption> -->
   </figure>
 
   <!-- 03 -->
-  <figure class="03">
+  <figure class="workthree">
     <img src="images/03.jpg" alt="img03">
-    <figcaption class="portfolio description">
+    <!-- <figcaption class="portfolio description">
       <p>project title</p>
-    </figcaption>
+    </figcaption> -->
   </figure>
 
   <!-- 04 -->
-  <figure class="04">
+  <figure class="workfour">
     <img src="images/04.jpg" alt="img04">
-    <figcaption class="portfolio description">
+    <!-- <figcaption class="portfolio description">
       <p>project title</p>
-    </figcaption>
+    </figcaption> -->
   </figure>
 
   <!-- 05 -->
-  <figure class="05">
+  <figure class="workfive">
     <img src="images/05.jpg" alt="img05">
-    <figcaption class="portfolio description">
+    <!-- <figcaption class="portfolio description">
       <p>project title</p>
-    </figcaption>
+    </figcaption> -->
   </figure>
 
   <!-- 06 -->
-  <figure class="06">
+  <figure class="worksix">
     <img src="images/06.jpg" alt="img06">
-    <figcaption class="portfolio description">
+    <!-- <figcaption class="portfolio description">
       <p>project title</p>
-    </figcaption>
+    </figcaption> -->
   </figure>
 
+</div>
 </section>
+</a>
 
 <!-- ABOUT ME -->
 
-<section class="about me">
+<a id="aboutme">
+<section class="about-me">
   <div class="about me text box">
 
-    <h1>Who am I?</h1>
-    <p>I'm the <strong>coolest</strong> monkey in the jungle, and I love to design. I find that being able to create something from nothing is an amazing skill.</p>
+<h1 class="about-me-title">Who am I?</h1>
+
+<p class="about-me-text">
+From Computer Science to Business Studies to Graphic Design, like most people I had trouble deciding what to do with my life, because I was interested in several things at the same time,
+the deciding point for me was when I looked at everything I had been doing and went for the one that made me the happiest.
+<br>
+<br>
+Why did I end up choosing Graphic Design you are asking? (If you are asking).
+<br>
+<br>
+Well, I got into it when I created a logo for one of my childhood friends and he loved it, making something from nothing its such an amazing feeling and have the person you are making it
+for love it and use it it’s a great feeling. I really enjoy making other people excited and happy about a design idea for their projects that they could be proud of using.
+Within Graphic Design the area I like the most is creating logos, because it’s how I started and I learned how important and incredibly unique each logo is. Whenever I hear about the story
+behind a certain logo and the reason behind it’s design I get really pumped to make something with a story behind, or a playful idea that will get anyone that see it feel happy or just smile
+for a second.
+<br>
+<br>
+I’m a sucker for new things. I could easily be caught watching how to create music out of a tuna can just because it looks and sounds cool, even if I don’t go for it and make it, I will be
+satisfied with knowing how it works. At the moment I’m learning how to play songs that I like on the ukulele, how to be a fully grown responsible/workaholic adult, and how to write an about
+me section that doesn’t make you want to sleep, (How am I doing so far?).
+<br>
+<br>
+I have an angry fucker resting face, but don’t let that intimidate you, I don’t bite (only food) I am very friendly and even though I get very nervous sometimes when I meet new people I love
+getting to know others. So, get in contact with me if you like what I do and you think it will suit your idea, I’m here to help you obtain something you will love to call yours.
+</p>
 
   </div>
 </section>
+</a>
 
-<section>
+<!-- FOOTER -->
 
-  <!-- FOORTER -->
-
+  <section class="footer">
   <footer>
 
     <ul>
       <li>Instagram</li>
-      <li>Twtitter</li>
       <li>Email</li>
     </ul>
 

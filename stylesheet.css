@@ -5,62 +5,194 @@
 */
 @font-face{
   font-family: HKNovaR; src: url(/fonts/HKNova-MediumR.ttf);
-  }
+}
+
+.fixedbar .fixedlogo {
+  position: static;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2%;
+  position: static;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fixedbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+  font-family: "HKNovaR";
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 1%
+}
+
+ section {
+   overflow: auto;
+ }
 
 .home {
-  background: #dddbdb;
-  margin: 0%;
-  }
+  background: #ede8e8;
+  margin: 0;
+  z-index: 100;
+  position: relative;
+}
 
 .work {
-  margin: auto;
-  background: #b1dae9;
+  background: #ede8e8;
+}
+
+.work-title {
+  color: #1c1c1c;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.about-me-title {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.about-me-text {
+  margin-top: 45px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 1000px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "one two three"
+  "four five six";
+}
+
+.work img {
+  width: 100%;
+  height: 100%;
+}
+
+.workone {
+  grid-area: one;
+}
+
+.worktwo {
+  grid-area: two;
+}
+
+.workthree {
+  grid-area: three;
+}
+
+.workfour {
+  grid-area: four;
+}
+
+.workfive {
+  grid-area: five;
+}
+
+.worksix {
+  grid-area: six;
 }
 
 h1 {
   margin: 0%;
+  text-transform: uppercase;
+  font-family: "HKNovaR";
+  font-size: 40px;
+  color: #292929;
 }
+
+nav a:hover {
+  color: #93744c
+}
+
+.fixedbar a:hover {
+  color: #93744c
+}
+
+.fixedbar {
+  position: fixed;
+  top:0;
+  width: 100%;
+  background: #ede8e8;
+  z-index: 5;
+  box-shadow: 0 4px 20px #616161;
+  /* opacity: 0.5; */
+}
+
+/* nav ul, nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* nav li {
+  display: inline-inline-block;
+  width: 20%;
+} */
+
+
 
 nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #111111;
   font-family: "HKNovaR";
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
-  }
+  margin-left: 1%;
+}
 
 nav .logo {
   position: static;
   display: inline-block;
-  margin-top: 13%;
+  margin-top: 12%;
   margin-bottom: 17%;
-  }
+  margin-left: 2%;
+}
+
 
 nav img{
   vertical-align: middle;
-  }
+}
 
 body {
   margin: 0;
   text-align: center;
-  }
+}
 
-header {
-  position: absolute;
-  margin-top: 1em;
-  }
+.about-me {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.about-me p {
+  color: #1a1818;
+  font-family: "HKNovaR";
+  text-align: left;
+}
+
+.footer {
+  background-color: #292929;
+  font-family: "HKNovaR";
+  color: #ffffff;
+}
 
 li {
   display: inline-block;
-  margin-top: 2%;
+  margin-top: 0;
   margin-right: 15%;
-  margin-bottom: 2%;
+  margin-bottom: 0;
   margin-left: 15%;
-  }
+}
+
 /* media query */
-@media screen and (max-width:400px){
+/* @media screen and (max-width:400px){
   nav img{
     display:none;
-    }
-}
+ } */
