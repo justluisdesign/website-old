@@ -29,7 +29,7 @@
 }
 
  section {
-   overflow: auto;
+   overflow: hidden;
  }
 
 .home {
@@ -50,53 +50,92 @@
 }
 
 .about-me-title {
-  margin-top: 70px;
+  margin-top: 100px;
   margin-bottom: 50px;
 }
 
 .about-me-text {
-  margin-top: 45px;
+  /* margin-top: 45px;
   margin-bottom: 100px;
   margin-left: 200px;
-  margin-right: 1000px;
+  margin-right: 1000px; */
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-bottom: 50px;
+  /* grid-template-areas:
   "one two three"
-  "four five six";
+  "four five six"; */
+}
+
+.wrapperaboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 50px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.about-me-text-box {
+  grid-column: 2/4;
+  grid-row: 1/4;
 }
 
 .work img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .workone {
-  grid-area: one;
+  /* grid-area: one; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .worktwo {
-  grid-area: two;
+  /* grid-area: two; */
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .workthree {
-  grid-area: three;
+  /* grid-area: three; */
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .workfour {
-  grid-area: four;
+  /* grid-area: four; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
 .workfive {
-  grid-area: five;
+  /* grid-area: five; */
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .worksix {
-  grid-area: six;
+  /* grid-area: six; */
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
 h1 {
@@ -188,6 +227,10 @@ li {
   margin-right: 15%;
   margin-bottom: 0;
   margin-left: 15%;
+}
+
+ul a{
+  color: #ffffff;
 }
 
 /* media query */
