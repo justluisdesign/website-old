@@ -16,6 +16,41 @@
   text-align: center;
 }
 
+.fixedbar .fixedlogo {
+  position: static;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2%;
+  position: static;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fixedbar a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+  font-family: "HKNovaR";
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 2%;
+}
+
+.fixedbar a:hover {
+  color: #93744c
+}
+
+.fixedbar {
+  position: fixed;
+  top:0;
+  width: 100%;
+  background: #ede8e8;
+  z-index: 5;
+  box-shadow: 0 4px 20px #616161;
+  /* opacity: 0.5; */
+}
+
 
 img {
   display: block;
@@ -50,7 +85,7 @@ h1, h2, h3 {
   display: inline-block;
   /* padding-top: 25%; */
   margin-top: 20%;
-  margin-bottom: 23%;
+  margin-bottom: 24%;
   align-items: center;
   width: 40%;
   z-index: 2;
@@ -137,37 +172,19 @@ section {
 
 
 /* MEDIA QUERIE */
-/*
-@media (min-width: 700px) {
 
-#showcase .logo {
-    margin-bottom: 12%;
+@media (max-width: 700px) {
+
+#showcase {
+    position:  static;
+    min-height: 0;
+    color: #fff;
   }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+     -webkit-text-stroke: 1.5px #2a121e;
+     font-size: 20px;
   }
-
-h1 {
-  padding: 0;
-  margin: 0;
 }
-
-.content-wrap {
-  grid-column: 3 / 7;
-  grid-row: 1;
-}
-
-.process {
-  grid-column: 2 / 8;
-  grid-row: 2 / span 3;
-}
-
-.finallogo {
-  grid-column: 1 / 8;
-  grid-row:  5 / 7;
-}
-
-} */

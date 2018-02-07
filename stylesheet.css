@@ -28,8 +28,8 @@
   margin-left: 2%;
 }
 
- section {
-   overflow: hidden;
+section {
+  overflow: hidden;
  }
 
 .home {
@@ -47,6 +47,12 @@
   color: #1c1c1c;
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+.work img:hover {
+  opacity: 0.9;
+  /* -webkit-filter: blur(1x); filter: blur(1px); */
+  -webkit-transform:scale(1.05);
 }
 
 .about-me-title {
