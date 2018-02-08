@@ -16,41 +16,6 @@
   text-align: center;
 }
 
-.fixedbar .fixedlogo {
-  position: static;
-  display: inline-block;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 2%;
-  position: static;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.fixedbar a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #111111;
-  font-family: "HKNovaR";
-  font-size: 15px;
-  font-weight: bold;
-  margin-left: 2%;
-}
-
-.fixedbar a:hover {
-  color: #93744c
-}
-
-.fixedbar {
-  position: fixed;
-  top:0;
-  width: 100%;
-  background: #ede8e8;
-  z-index: 5;
-  box-shadow: 0 4px 20px #616161;
-  /* opacity: 0.5; */
-}
-
 
 img {
   display: block;
@@ -169,7 +134,6 @@ section {
 .animationtitle {
   padding: 5;
 }
-
 
 /* MEDIA QUERIE */
 
