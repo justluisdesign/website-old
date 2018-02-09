@@ -74,6 +74,15 @@
 .title {
   position: relative;
 }
+
+/* grid */
+
+.wrapper {
+  margin: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
 /* .content-wrap {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
